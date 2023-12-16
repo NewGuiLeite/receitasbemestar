@@ -1,3 +1,26 @@
+// Adicione ao final do arquivo scripts.js
+
+// Função para exibir mensagem na tela
+function exibirMensagemNaTela(mensagem) {
+    // Cria um elemento de parágrafo
+    const mensagemElemento = document.createElement('p');
+    
+    // Adiciona a classe de estilo Bootstrap
+    mensagemElemento.classList.add('alert', 'alert-success');
+
+    // Define o texto da mensagem
+    mensagemElemento.textContent = mensagem;
+
+    // Adiciona o elemento à seção de blog (ou à área desejada na sua página)
+    const secaoBlog = document.querySelector('.blog');
+    secaoBlog.appendChild(mensagemElemento);
+
+    // Remove a mensagem após alguns segundos (pode ajustar o tempo conforme necessário)
+    setTimeout(() => {
+        mensagemElemento.remove();
+    }, 5000);
+}
+
 // Função para enviar mensagem para o WhatsApp Web
 function enviarMensagemWhatsapp(nome, mensagem) {
     // Substitua 'SEU_NUMERO_DESTINO' com o número de telefone para onde deseja enviar a mensagem
@@ -19,24 +42,20 @@ function submitRecipe() {
 
     // Validação simples (pode ser aprimorada conforme necessário)
     if (!chefName || !recipeDescription) {
-        alert('Por favor, preencha todos os campos do formulário.');
+        exibirMensagemNaTela('Por favor, preencha todos os campos do formulário.');
         return;
     }
 
-    // Constrói o corpo do e-mail
-    const emailBody = `
-        Seu Nome: ${chefName}
-        Descrição da Receita: ${recipeDescription}
-    `;
+    // Constrói o corpo da mensagem
+    const mensagem = `Nova mensagem de ${chefName}: ${recipeDescription}`;
 
-    // Simula o envio do e-mail (substitua com a lógica real de envio)
-    // Neste exemplo, será exibido um alerta com o corpo do e-mail
-    alert('Receita enviada com sucesso!\n\nDetalhes:\n\n' + emailBody);
+    // Chama a função para exibir a mensagem na tela
+    exibirMensagemNaTela('Receita enviada com sucesso!');
 
     // Limpa os campos do formulário após o envio
     document.getElementById('chefName').value = '';
     document.getElementById('recipeDescription').value = '';
 
     // Chama a função para enviar mensagem no WhatsApp
-    enviarMensagemWhatsapp(chefName, 'Nova receita enviada!');
+    enviarMensagemWhatsapp(chefName, mensagem);
 }
