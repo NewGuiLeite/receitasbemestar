@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolo de Chocolate Simples</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 90.6px;
+            height: 26.9px;
+            margin-top: 5px;
+        }
+
+        .links {
+            margin-left: auto;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #ebc136;
+            font-weight: bold;
+        }
+
+        .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-details,
+        .recipe-instructions,
+        .recipe-notes {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-details h3,
+        .recipe-instructions h3,
+        .recipe-notes h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-details h4,
+        .recipe-instructions h4,
+        .recipe-notes h4 {
+            color: #ebc136;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .recipe-details p,
+        .recipe-instructions ol,
+        .recipe-notes p {
+            font-size: 16px;
+            opacity: 0.7;
+            margin-bottom: 15px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ebc136;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="./index.html">
+                <img src="./img/logo.png" alt="Logo Foodfy" />
+            </a>
+            <div class="links">
+                <a href="sobre.html">Sobre</a>
+                <a href="receitas.html">Receitas</a>
+                <a href="vitaminas.html">Vitaminas</a>
+                <a href="sucos.html">Sucos</a>
+            </div>
+        </header>
+    </div>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog">
+                <h1>Blog</h1>
+                <div class="blog-posts">
+                    <!-- Adicione posts do blog aqui -->
+                    <div class="blog-post">
+                        <h2>Bolo de Chocolate Simples</h2>
+                        <img src="img/bolochocolate.png" alt="Bolo de Chocolate Simples">
+                        <p>Bolo de chocolate simples que pode ser feito à mão ou na batedeira. Receita da minha família.</p>
+
+                        <div class="recipe-details">
+                            <h3>Detalhes da Receita</h3>
+
+                            <h4>Curso</h4>
+                            <p>Bolo</p>
+
+                            <h4>Culinária</h4>
+                            <p>Brasileira</p>
+
+                            <h4>Palavras-chave</h4>
+                            <p>bolo simples, chocolate</p>
+
+                            <h4>Tempo de Preparo</h4>
+                            <p>30 minutos</p>
+
+                            <h4>Tempo de Cozimento</h4>
+                            <p>40 minutos</p>
+
+                            <h4>Tempo Total</h4>
+                            <p>1 hora e 10 minutos</p>
+
+                            <h4>Porções</h4>
+                            <p>8</p>
+
+                            <h4>Autor</h4>
+                            <p>Carla Duclos</p>
+                        </div>
+
+                        <div class="recipe-ingredients">
+                            <h3>Ingredientes</h3>
+                            <ul>
+                                <li>3 ovos gemas e claras separadas</li>
+                                <li>100 gramas de manteiga ou margarina</li>
+                                <li>2 xícaras de açúcar</li>
+                                <li>2 xícaras de farinha de trigo</li>
+                                <li>1 xícara de chocolate em pó</li>
+                                <li>1 xícara de leite morno</li>
+                                <li>1 colher de sopa de fermento em pó</li>
+                            </ul>
+                        </div>
+
+                        <div class="recipe-instructions">
+                            <h3>Instruções</h3>
+                            <ol>
+                                <li>Pré-aqueça o forno a 200 graus C.</li>
+                                <li>Unte uma forma de buraco no meio com manteiga e farinha.</li>
+                                <li>Bata as claras em neve e reserve.</li>
+                                <li>Bata bem as gemas, o açúcar e a manteiga até obter um creme clarinho.</li>
+                                <li>Misture a farinha, o chocolate em pó e o leite intercalando. Se estiver utilizando a batedeira, selecione a velocidade baixa.</li>
+                                <li>Incorpore delicadamente o fermento e as claras em neve à massa.</li>
+                                <li>Despeje a mistura na forma e leve para assar por cerca de 30 a 40 minutos. Teste com um palito de madeira. Faça um furo na massa com o palito e ele deve sair limpo quando o bolo estiver pronto.</li>
+                                <li>Retire do forno e cubra com um pano de prato limpo.</li>
+                                <li>Espere esfriar e desenforme. (Essa parte nem sempre acontece. ADORO cortar o bolo na forma ainda quente.)</li>
+                            </ol>
+                        </div>
+
+                        <div class="recipe-notes">
+                            <h3>Notas</h3>
+                            <p>Observação: A xícara usada é uma xícara medida de 240 ml.</p>
+                        </div>
+
+                        <p class="post-meta">Por Chef Guilherme Leite em 16 de Dezembro de 2023</p>
+                    </div>
+                    <!-- Adicione mais posts do blog aqui -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mais_acessadas">
+        <div class="container">
+            <h1 id="title">Mais acessadas</h1>
+            <a href="./index.html" class="back-button">Voltar para o Início</a>
+        </div>
+    </div>
+
+    <section class="recipes">
+        <!-- Adicione receitas conforme necessário -->
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Todos os direitos reservados, Tempero Bom receitas.</p>
+        </div>
+    </footer>
+
+    <div class="modal_overlay">
+        <div class="modal">
+            <div class="modal_image-container">
+                <img src="img/burger.png">
+            </div>
+            <div class="modal_content">
+                <h1 class="nome"></h1>
+                <p class="chef"></p>
+            </div>
+            <a class="modal_close">
+                <p>Fechar modal</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

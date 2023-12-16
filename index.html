@@ -3,34 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adicione esta linha para incluir o Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>Tempero Bom</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="./index.html">
-                <img src="./img/logo.png" alt="Logo Foodfy" />
-            </a>
-            <div class = "links">
-                <a href="sobre.html">Sobre</a>
-                <a href="receitas.html">Receitas</a>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo.png" alt="Logo Foodfy" />
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="links navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="receitas.html">Receitas</a>
+                            <a class="nav-item nav-link" href="vitaminas.html">Vitaminas</a>
+                            <a class="nav-item nav-link" href="sucos.html">Sucos</a>
+                            <a class="nav-item nav-link" href="blog.html">Blog</a>
+                            <form class="form-inline ml-2">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar bolos" aria-label="Search" id="searchInput">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchRecipes()">Pesquisar</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
+        
     </div>
     
+    <section class="blog">
+        <h1>Blog Receitas</h1>
+        <div class="blog-posts">
 
-    <div id="wrapper">
 
-        <div class="info">
-            <h1>As melhores receitas</h1>
-            <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+            <!-- Adicione posts do blog aqui -->
+
+            <div class="blog-post">
+                <h2>Bolo de Chocolate Simples</h2>
+                <p class="post-meta">Por: Guilherme Leite em 16 de Dezembro de 2023</p>
+                <p>Como fazer um delicioso Bolo de chocolate simplesque pode ser feito à mão ou na batedeira. Receita da minha família.</p>
+                <a href="bolochocolatesimples.html">Leia mais</a>
+            </div>
+
+            <!-- Adicione posts do blog aqui -->
+
+
+
+            <!-- Adicione mais posts conforme necessário -->
         </div>
-
-        <img src="img/chef.png" alt="Foodfy">
-
-    </div>
-
+    </section>
+        
     <div class="mais_acessadas">
         <h1 id="title">Mais acessadas</h1>
     </div>
@@ -117,9 +148,8 @@
             </div>
 
             <a class="modal_close">
-                <P>Fechar modal</P>
+                <p>Fechar modal</p>
             </a>
-
 
         </div>
 
@@ -128,5 +158,4 @@
     <script src="scripts.js"></script>
     
 </body>
-
 </html>
