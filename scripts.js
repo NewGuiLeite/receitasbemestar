@@ -27,12 +27,13 @@ function enviarMensagemWhatsapp(nome, mensagem) {
     const phoneNumber = '18997329690';
     const mensagemFormatada = `Nova mensagem de ${nome}: ${mensagem}`;
 
-    // Constrói o link para abrir o WhatsApp Web com a mensagem preenchida
-    const apiUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(mensagemFormatada)}`;
+    // Constrói o link para abrir o WhatsApp Web com o mensagem preenchida
+    const apiUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensagemFormatada)}`;
 
     // Abre uma nova janela ou guia com o link
     window.open(apiUrl);
 }
+
 
 // Função para validar e enviar receita
 function submitRecipe() {
