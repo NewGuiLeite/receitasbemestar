@@ -21,6 +21,7 @@ document.querySelector('.modal_close').addEventListener('click', () => {
     modalOverlay.querySelector('p').innerHTML = null
 })
 
+
 function searchRecipes() {
     // Adicione o código de pesquisa aqui
     var searchTerm = document.getElementById('searchInput').value.toLowerCase();

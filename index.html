@@ -27,7 +27,7 @@
                             <a class="nav-item nav-link" href="receitas.html">Receitas</a>
                             <a class="nav-item nav-link" href="vitaminas.html">Vitaminas</a>
                             <a class="nav-item nav-link" href="sucos.html">Sucos</a>
-                            <a class="nav-item nav-link" href="blog.html">Blog</a>
+                            <a class="nav-item nav-link" href="sobre.html">Sobre</a>
                             <form class="form-inline ml-2">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar bolos" aria-label="Search" id="searchInput">
                                 <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchRecipes()">Pesquisar</button>
@@ -41,26 +41,43 @@
     </div>
     
     <section class="blog">
-        <h1>Blog Receitas</h1>
+        <h1>Blog de Receitas</h1>
         <div class="blog-posts">
-
-
             <!-- Adicione posts do blog aqui -->
-
             <div class="blog-post">
                 <h2>Bolo de Chocolate Simples</h2>
                 <p class="post-meta">Por: Guilherme Leite em 16 de Dezembro de 2023</p>
-                <p>Como fazer um delicioso Bolo de chocolate simplesque pode ser feito à mão ou na batedeira. Receita da minha família.</p>
+                <p>Descubra como fazer um delicioso bolo de chocolate simples, que pode ser preparado à mão ou na batedeira. Uma receita tradicional da minha família.</p>
                 <a href="bolochocolatesimples.html">Leia mais</a>
             </div>
-
+    
+            <div class="blog-post">
+                <h2>Bolo Formigueiro Fofinho e Macio</h2>
+                <p class="post-meta">Por: Guilherme Leite em 16 de Dezembro de 2023</p>
+                <p>Explore a receita de um irresistível bolo formigueiro, conhecido por sua textura fofinha e maciez.</p>
+                <a href="boloformigueirofofi.html">Leia mais</a>
+            </div>
+    
+            <div class="blog-post">
+                <h2>Pão de Queijo de Liquidificador</h2>
+                <p class="post-meta">Por: Vanda Peruche em 16 de Dezembro de 2023</p>
+                <p>Aprenda a fazer um saboroso pão de queijo no liquidificador, preparado com queijo parmesão. Uma receita irresistível.</p>
+                <a href="paodequeijoliqui.html">Leia mais</a>
+            </div>
+    
+            <div class="blog-post">
+                <h2>Bolo de Cenoura com Cobertura de Chocolate</h2>
+                <p class="post-meta">Por: Guilherme Leite em 16 de Dezembro de 2023</p>
+                <p>Delicioso clássico bolo de cenoura com calda de chocolate. Este bolo fica super fofinho, uma verdadeira delícia.</p>
+                <a href="bolocenourachoco.html">Leia mais</a>
+            </div>
+            <!-- Adicione mais posts do blog aqui -->
             <!-- Adicione posts do blog aqui -->
-
-
-
             <!-- Adicione mais posts conforme necessário -->
         </div>
     </section>
+    
+    
         
     <div class="mais_acessadas">
         <h1 id="title">Mais acessadas</h1>
@@ -132,6 +149,17 @@
 
     <footer>
         <p>Todos os direitos reservados, Tempero Bom receitas.</p>
+
+        <!-- Seção de aceitação de cookies -->
+        <div id="cookieConsent" class="fixed-bottom text-center">
+            <p>O Tempero Bom Receitas usa cookies para garantir que você tenha uma boa experiência no blog. <a href="politicasprivacidade.html">Mais informações</a>.</p>
+            <button class="btn btn-success btn-sm" onclick="acceptAllCookies()">Permitir Todos os Cookies</button>
+            <button class="btn btn-danger btn-sm" onclick="declineCookies()">Recusar</button>
+        </div>
+
+    <!-- Script do seu arquivo cookie.js -->
+    <script src="cookie.js"></script>
+
     </footer>
 
     <div class="modal_overlay">
@@ -153,6 +181,7 @@
 
         </div>
 
+    
     </div>
 
     <script src="scripts.js"></script>
