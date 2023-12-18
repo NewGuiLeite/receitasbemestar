@@ -99,20 +99,16 @@ nav {
     margin-left: auto;
 }
 
-/* Estilo para a seção "mais_acessadas" */
-.mais_acessadas {
-    background-color: #fff;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px 0;
+/* Adicione ao seu arquivo CSS */
+.decorative-line {
+    display: inline-block;
+    width: 30px; /* Ajuste conforme necessário */
+    height: 2px;
+    background-color: #ebc136; /* Cor da linha */
+    margin: 0 10px; /* Espaçamento entre o texto e a linha */
 }
 
-/* Estilo para o título na seção "mais_acessadas" */
-#title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
+
 
 /* Estilo para a seção "recipes" (receitas) */
 .recipes {
@@ -323,3 +319,65 @@ footer p {
     background-color: #218838;
 }
 
+
+/* Outros estilos existentes */
+
+/* Adicione ao seu arquivo CSS */
+
+/* Estilo para a seção "Quer ver mais receitas? Clique aqui" */
+.leia-mais-section {
+    text-align: center;
+    padding: 40px 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
+    background-color: #f5f5f5; /* Adapte a cor de fundo conforme necessário */
+}
+
+
+.leia-mais-button {
+    font-size: 24px;
+    background-color: #ebc136; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 30px; /* Espaçamento interno do botão */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leia-mais-button:hover {
+    background-color: #333; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Adicione ao seu arquivo CSS */
+.espaco {
+    height: 20px; /* Ajuste a altura conforme necessário */
+}
+
+/* Adicione outras regras de estilo conforme necessário */
+
+/* Estilo para o título na seção "mais_acessadas" */
+#title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    padding: 20px 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
+    background-color: #fff; /* Adapte a cor de fundo conforme necessário */
+}
+
+/* Adicione ao seu arquivo CSS */
+.back-button {
+    display: block;
+    width: 200px; /* Largura desejada do botão */
+    margin: 0 auto;
+    background-color: #ebc136; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #333; /* Altera a cor de fundo ao passar o mouse */
+}
