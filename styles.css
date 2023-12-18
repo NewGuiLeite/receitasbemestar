@@ -381,3 +381,44 @@ footer p {
 .back-button:hover {
     background-color: #333; /* Altera a cor de fundo ao passar o mouse */
 }
+
+/* Estilo para os cards */
+.card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.recipe_image-container {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.recipe_image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe_info {
+    margin-top: 10px;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.chef {
+    color: #555;
+}
+
+.espaco {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
