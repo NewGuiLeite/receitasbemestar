@@ -26,20 +26,23 @@
             background-color: #f5f5f5;
         }
 
-        .container {
+       /* Container principal para limitar a largura e centralizar a página */
+       .container {
             max-width: 940px;
             margin: 0 auto;
         }
 
+        /* Estilo do cabeçalho, com sombra sutil e padding */
         header {
             background-color: #fff;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
             padding: 15px 0;
         }
 
-       
+        
+             
                     /* Estilo do logotipo no cabeçalho */
-                    header img {
+            header img {
                 width: 150px;
                 height: 50px;
                 margin-top: 5px;
@@ -104,25 +107,31 @@
 <body>
     <div class="container">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./img/logo.png" alt="Logo Foodfy" />
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="links navbar-nav ml-auto">
-                        <a class="nav-item nav-link" href="index.html">Home</a>
-                        <a class="nav-item nav-link" href="receitas.html">Receitas</a>
-                        <a class="nav-item nav-link" href="sucosevitaminas.html">Sucos e Vitaminas</a>
-                        <a class="nav-item nav-link" href="sobre.html">Sobre</a>
-                                            </div>
-                </div>
-            </nav>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo.png" alt="Logo Foodfy" />
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="links navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="index.html">Home</a>
+                            <a class="nav-item nav-link" href="receitas.html">Receitas</a>
+                            <a class="nav-item nav-link" href="sucosevitaminas.html">Sucos e Vitaminas</a>
+                            <a class="nav-item nav-link" href="sobre.html">Sobre</a>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
+        
     </div>
+
     <section class="blog">
     <form class="form-inline ml-2">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar receitas"
