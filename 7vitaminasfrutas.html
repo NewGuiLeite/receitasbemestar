@@ -7,52 +7,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3KGMMNVB6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3KGMMNVB6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-K3KGMMNVB6');
-</script>
-    
-<!-- Adicione esta linha para incluir o Bootstrap JavaScript -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        gtag('config', 'G-K3KGMMNVB6');
+    </script>
 
+    <!-- Adicione esta linha para incluir o Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-    <title>7 Vitaminas - Bem Estar</title>
+    <title>Bolo de Chocolate Simples</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        
         /* Estilo geral do corpo da página */
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
-        }
-            /* Container principal para limitar a largura e centralizar a página */
-        .container {
             max-width: 940px;
             margin: 0 auto;
         }
 
-            /* Estilo do cabeçalho, com sombra sutil e padding */
+        /* Estilo do cabeçalho, com sombra sutil e padding */
         header {
             background-color: #fff;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
             padding: 15px 0;
         }
 
-       
-                    /* Estilo do logotipo no cabeçalho */
-                    header img {
-                width: 150px;
-                height: 50px;
-                margin-top: 5px;
-            }
-            /* Estilo de navegação, alinhando à direita */
+        /* Estilo do logotipo no cabeçalho */
+        header img {
+            width: 150px;
+            height: 50px;
+            margin-top: 5px;
+        }
+
+        /* Estilo de navegação, alinhando à direita */
         nav {
             display: flex;
             align-items: center;
@@ -70,18 +64,22 @@
             margin: 0 15px;
             transition: color 0.3s ease;
         }
+
         /* Estilo para links ativos ou hover */
-        .links a.active, .links a:hover {
+        .links a.active,
+        .links a:hover {
             color: #ebc136;
             font-weight: bold;
         }
 
-
         .blog-post img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
+    width: 100%;
+    height: 300px; /* Defina a altura desejada */
+    object-fit: cover; /* Isso mantém a proporção da imagem */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 
         .recipe-details,
         .recipe-instructions,
@@ -121,7 +119,6 @@
             color: #777;
         }
 
-
         footer {
             margin-top: 20px;
             background-color: #fff;
@@ -138,95 +135,80 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="./img/logo.png" alt="Logo Foodfy" />
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="links navbar-nav ml-auto">
-                            <a class="nav-item nav-link" href="index.html">Home</a>
-                            <a class="nav-item nav-link" href="receitas.html">Receitas</a>
-                            <a class="nav-item nav-link" href="sucosevitaminas.html">Sucos e Vitaminas</a>
-                            <a class="nav-item nav-link" href="sobre.html">Sobre</a>
-                                                    </div>
-                    </div>
-                </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="Logo Foodfy" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="links navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="receitas.html">Receitas</a>
+                    <a class="nav-item nav-link" href="sucosevitaminas.html">Sucos e Vitaminas</a>
+                    <a class="nav-item nav-link" href="sobre.html">Sobre</a>
+                </div>
             </div>
+        </nav>
+    </header>
+
+    <!-- Adicione receitas de vitaminas de frutas aqui -->
+
+    <!-- Receita 1: Vitamina de Banana -->
+    <div class="blog-post">
+        <header>
+            <h2>Vitamina de Banana</h2>
+            <img src="img/vitamina-de-banana.jpg" alt="Vitamina de Banana">
+            <p>
+                Uma fruta muito consumida em alguns países, até mesmo como acompanhamento de pratos específicos, é a banana, cujas vitaminas são saborosas e nutritivas, bem como adequadas a qualquer momento. Cada banana contém muito potássio, o que significa alto teor energético. Sua combinação com leite desnatado produz uma vitamina leve e recomendada para manter o peso ou emagrecer, complementada por exercícios.
+            </p>
+            <p class="recipe-details">
+                <strong>Ingredientes:</strong>
+                <br>2 bananas
+                <br>200 ml de leite desnatado gelado
+                <br>2 colheres (sopa) de açúcar
+                <br>1 colher (sopa) de aveia
+            </p>
         </header>
-        
     </div>
 
-   <!-- Adicione receitas de vitaminas de frutas aqui -->
+    <!-- Receita 2: Vitamina de Morango -->
+    <div class="blog-post">
+        <header>
+            <h2>Vitamina de Morango</h2>
+            <img src="img/vitamina-de-morango3-713x1024.jpg" alt="Vitamina de Morango">
+            <p>
+                O morango é uma fruta multivitamínica. Possui um elevado teor de vitamina C, além de água, fibras, potássio, cálcio e magnésio, ácido fólico e vitamina E. É recomendada principalmente pela sua riqueza em minerais, vitaminas e ferro.
+            </p>
+            <p class="recipe-details">
+                <strong>Ingredientes:</strong>
+                <br>1 pote de Iogurte Natural
+                <br>4 morangos picados
+                <br>1/2 xícara de Leite desnatado gelado
+                <br>2 colheres (sopa) de açúcar
+                <br>3 colheres (sopa) de farinha láctea
+            </p>
+        </header>
+    </div>
 
-<!-- Receita 1: Vitamina de Banana -->
-<div class="blog-post">
-    <header>
-    <h2>Vitamina de Banana</h2>
-    <img src="img/vitamina_banana.jpg" alt="Vitamina de Banana">
-    <p>
-        Uma fruta muito consumida em alguns países, até mesmo como acompanhamento de pratos específicos,
-        é a banana, cujas vitaminas são saborosas e nutritivas, bem como adequadas a qualquer momento.
-        Cada banana contém muito potássio, o que significa alto teor energético. Sua combinação com leite desnatado
-        produz uma vitamina leve e recomendada para manter o peso ou emagrecer, complementada por exercícios.
-    </p>
-    <p class="recipe-details">
-        <strong>Ingredientes:</strong>
-        <br>2 bananas
-        <br>200 ml de leite desnatado gelado
-        <br>2 colheres (sopa) de açúcar
-        <br>1 colher (sopa) de aveia
-    </p>
-</div>
-
-<!-- Receita 2: Vitamina de Morango -->
-<div class="blog-post">
-    <h2>Vitamina de Morango</h2>
-    <img src="img/vitamina_morango.jpg" alt="Vitamina de Morango">
-    <p>
-        O morango é uma fruta multivitamínica. Possui um elevado teor de vitamina C, além de água, fibras, potássio,
-        cálcio e magnésio, ácido fólico e vitamina E. É recomendada principalmente pela sua riqueza em minerais, vitaminas e ferro.
-    </p>
-    <p class="recipe-details">
-        <strong>Ingredientes:</strong>
-        <br>1 pote de Iogurte Natural
-        <br>4 morangos picados
-        <br>1/2 xícara de Leite desnatado gelado
-        <br>2 colheres (sopa) de açúcar
-        <br>3 colheres (sopa) de farinha láctea
-    </p>
-</header>
-</div>
-
-<!-- Adicione mais receitas conforme necessário -->
-
-
+    <!-- Adicione mais receitas conforme necessário -->
 
     <!-- Botão Voltar -->
-<div class="mais_acessadas">
-    <div class="container">
-        <a href="./receitas.html" class="back-button">Voltar para o Início</a>
+    <div class="mais_acessadas">
+        <div class="container">
+            <a href="./sucosevitaminas.html" class="back-button">Voltar para o Início</a>
+        </div>
     </div>
-</div>
-
 
     <section class="recipes">
         <!-- Adicione receitas conforme necessário -->
     </section>
 
     <footer>
-        <div class="container">
-            <footer>
-                <p>Todos os direitos reservados, Receitas Bem Estar.</p>
-                <p>O Receitas Bem Estar usa Politicas de Privacidade para garantir que você tenha uma boa experiência no blog. <a href="politicasprivacidade.html">Mais informações</a>.</p>
-        </div>
+        <p>Todos os direitos reservados, Receitas Bem Estar.</p>
+        <p>O Receitas Bem Estar usa Politicas de Privacidade para garantir que você tenha uma boa experiência no blog. <a href="politicasprivacidade.html">Mais informações</a>.</p>
     </footer>
 
     <div class="modal_overlay">
