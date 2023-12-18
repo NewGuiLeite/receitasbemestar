@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3KGMMNVB6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K3KGMMNVB6');
+</script>
+    
+<!-- Adicione esta linha para incluir o Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <title>Receitas - Pave Tradicional</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+            /* Container principal para limitar a largura e centralizar a página */
+        .container {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+            /* Estilo do cabeçalho, com sombra sutil e padding */
+        header {
+            background-color: #fff;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+
+       
+                    /* Estilo do logotipo no cabeçalho */
+                    header img {
+                width: 150px;
+                height: 50px;
+                margin-top: 5px;
+            }
+            /* Estilo de navegação, alinhando à direita */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Estilo dos links de navegação */
+        .links {
+            margin-left: auto;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        /* Estilo para links ativos ou hover */
+        .links a.active, .links a:hover {
+            color: #ebc136;
+            font-weight: bold;
+        }
+
+
+        .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-details,
+        .recipe-instructions,
+        .recipe-notes {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-details h3,
+        .recipe-instructions h3,
+        .recipe-notes h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-details h4,
+        .recipe-instructions h4,
+        .recipe-notes h4 {
+            color: #ebc136;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .recipe-details p,
+        .recipe-instructions ol,
+        .recipe-notes p {
+            font-size: 16px;
+            opacity: 0.7;
+            margin-bottom: 15px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: #777;
+        }
+
+
+        footer {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo.png" alt="Logo Foodfy" />
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="links navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="index.html">Home</a>
+                            <a class="nav-item nav-link" href="receitas.html">Receitas</a>
+                            <a class="nav-item nav-link" href="sucosevitaminas.html">Sucos e Vitaminas</a>
+                            <a class="nav-item nav-link" href="sobre.html">Sobre</a>
+                                                    </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+    </div>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog">
+                <h1>Blog - Receita Pave Tradicional</h1>
+                <div class="blog-posts">
+                    <!-- Bolo de Chocolate Simples -->
+                    <div class="blog-post">
+                        <h2>Pave Tradicional</h2>
+                        <img src="img/pavetradicional.jpg" alt="Pave Tradicional">
+                        <p>
+                            Pavê Clássico: Uma tentadora harmonia de camadas, onde o suave creme branco se entrelaça com o envolvente ganache. Uma receita familiar que transcende o comum.</p>
+    
+                        <div class="recipe-details">
+                            <h3>Detalhes da Receita</h3>
+                            <!-- ... (detalhes da receita do bolo) ... -->
+                        </div>
+    
+                       
+    
+                        <div class="recipe-notes">
+                            <h3>Notas</h3>
+                            <p>Esta receita serve aproximadamente 10 pessoas. Se quiser usar uma vasilha maior para servir mais pessoas, basta dobrar a receita.</p>
+                        </div>
+        
+                        <p class="post-meta">Por Bruna Lima em 18 de Dezembro de 2023</p>
+                    </div>
+    
+                    <!-- Pavê Tradicional -->
+                    <div class="blog-post">
+                        <h2>Pavê Tradicional</h2>
+    
+                        <div class="recipe-instructions">
+                            <h3>Ingredientes</h3>
+                            <ul>
+                                <li>1 caixa de bolacha de champanhe</li>
+                                <li>2 caixas de creme de leite</li>
+                                <li>2 colheres de sopa bem cheias de amido de milho</li>
+                                <li>1 caixa de leite condensado</li>
+                                <li>2 xícaras de leite</li>
+                                <li>1 colher de chá de essência de baunilha</li>
+                                <li>250g de chocolate ao leite ou meio amargo</li>
+                            </ul>
+                        </div>
+    
+                        <div class="recipe-instructions">
+                            <h3>Modo de Preparo</h3>
+                            <p><strong>Base:</strong> Em uma tigela (aproximadamente 30x15) coloque as bolachas de champanhe molhando em um pouco de leite.</p>
+                            <!-- ... (instruções da base) ... -->
+    
+                            <p><strong>Creme:</strong> Em uma panela coloque o amido de milho e uma caixa de creme de leite, mexa até dissolver bem o amido. Depois, acrescente o leite condensado, o leite e a essência de baunilha. Mexa bem e leve ao fogo, mexendo sempre até virar um creme firme.</p>
+                            <!-- ... (instruções do creme) ... -->
+    
+                            <p><strong>Ganache de Chocolate:</strong> Derreta o chocolate (lembre-se de picar o chocolate para facilitar) e misture com uma caixa de creme de leite. Depois, despeje por cima do creme.</p>
+                            <!-- ... (instruções do ganache) ... -->
+    
+                            <p><strong>Opcional:</strong> Se preferir decorar, pode acrescentar bombons, raspas de chocolates, bis, morangos ou qualquer ingrediente de sua escolha por cima do ganache.</p>
+                        </div>
+    
+                        
+    
+                    </div>
+                    <!-- Adicione mais posts do blog aqui -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Botão Voltar -->
+<div class="mais_acessadas">
+    <div class="container">
+        <a href="./receitas.html" class="back-button">Voltar para o Início</a>
+    </div>
+</div>
+
+
+    <section class="recipes">
+        <!-- Adicione receitas conforme necessário -->
+    </section>
+
+    <footer>
+        <div class="container">
+            <footer>
+                <p>Todos os direitos reservados, Receitas Bem Estar.</p>
+                <p>O Receitas Bem Estar usa Politicas de Privacidade para garantir que você tenha uma boa experiência no blog. <a href="politicasprivacidade.html">Mais informações</a>.</p>
+        </div>
+    </footer>
+
+    <div class="modal_overlay">
+        <div class="modal">
+            <div class="modal_image-container">
+                <img src="img/burger.png">
+            </div>
+            <div class="modal_content">
+                <h1 class="nome"></h1>
+                <p class="chef"></p>
+            </div>
+            <a class="modal_close">
+                <p>Fechar modal</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
