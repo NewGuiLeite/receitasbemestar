@@ -24,8 +24,8 @@ function exibirMensagemNaTela(mensagem) {
 // Função para enviar mensagem para o WhatsApp Web
 function enviarMensagemWhatsapp(nome, mensagem) {
     // Substitua 'SEU_NUMERO_DESTINO' com o número de telefone para onde deseja enviar a mensagem
-    const phoneNumber = '18997329690';
-    const mensagemFormatada = `Nova mensagem de ${nome}: ${mensagem}`;
+    const phoneNumber = '18996100443';
+    const mensagemFormatada = `Ola, Quero Enviar Minha Receita, Nova mensagem de ${nome}: ${mensagem}`;
 
     // Constrói o link para abrir o WhatsApp Web com o mensagem preenchida
     const apiUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensagemFormatada)}`;
