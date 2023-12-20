@@ -137,30 +137,48 @@
         
     </form>
 </section>
-
 <section class="blog">
     <form class="form-inline ml-2">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar receitas"
             aria-label="Search" id="searchInput">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="button"
-            onclick="searchRecipes()">Pesquisar</button>
-
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchRecipes()">Pesquisar</button>
     </form>
-    </section>
-    
+</section>
+
 <section class="blog">
-    <h1>Blog de Receitas</h1>
+
     <div class="blog-posts">
 
         <!-- Post 1: 7 receitas de vitaminas de frutas e seus benefícios -->
         <div class="blog-post" id="7vitaminasfrutas">
-            <h2>7 receitas de vitaminas de frutas e seus benefícios</h2>
+            <h2>7 Receitas de vitaminas de frutas e seus benefícios!</h2>
             <p class="post-meta">Por: Guilherme Leite em 18 de Dezembro de 2023</p>
             <div class="image-container">
-                <img src="img/vitamina-de-morango3-713x1024.jpg" alt="bolo de chocolate" class="img-fluid">
+                <img src="img/vitamina-de-morango3-713x1024.jpg" alt="7 Vitamina" class="img-fluid">
             </div>
             <p>Descubra como fazer algumas deliciosas vitaminas de frutas e aproveite os benefícios para a sua saúde.</p>
             <a href="7vitaminasfrutas.html">Leia mais</a>
+        </div>
+        <!-- Adicione mais posts do blog aqui -->
+        <!-- Adicione mais posts do blog conforme necessário -->
+
+    </div>
+</section>
+
+
+<section class="blog">
+
+    <div class="blog-posts">
+
+        <!-- Post 1: 7 receitas de vitaminas de frutas e seus benefícios -->
+        <div class="blog-post" id="3sucosdetox">
+            <h2>3 Receitas de Suco Detox para Desinchar</h2>
+            <p class="post-meta">Por: Guilherme Leite em 18 de Dezembro de 2023</p>
+            <div class="image-container">
+                <img src="img/detoxsucos.jpg" alt="3 Sucos Detox" class="img-fluid">
+            </div>
+            <p>Descubra como fazer alguns sucos Detox e aproveite os benefícios para a sua saúde.</p>
+            <a href="3sucosdetox.html">Leia mais</a>
         </div>
 
         <!-- Adicione mais posts do blog aqui -->
@@ -188,18 +206,19 @@
     </div>
 </footer>
 
-    <script>
-        function searchRecipes() {
-            var searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            var blogPosts = document.querySelectorAll('.blog-post');
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function searchRecipes() {
+        var searchTerm = $('#searchInput').val().toLowerCase();
 
-            blogPosts.forEach(function (post) {
-                var title = post.querySelector('h2').innerText.toLowerCase();
-                var shouldDisplay = title.includes(searchTerm);
-                post.style.display = shouldDisplay ? 'block' : 'none';
-            });
-        }
-    </script>
+        $('.blog-post').each(function () {
+            var title = $(this).find('h2').text().toLowerCase();
+            var shouldDisplay = title.includes(searchTerm);
+
+            $(this).toggle(shouldDisplay);
+        });
+    }
+</script>
 </body>
 
 </html>
