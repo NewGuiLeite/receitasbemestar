@@ -109,7 +109,6 @@ nav {
 }
 
 
-
 /* Estilo para a seção "recipes" (receitas) */
 .recipes {
     max-width: 940px;
@@ -146,68 +145,6 @@ footer {
 footer p {
     font-size: 14px;
     color: #777;
-}
-
-/* Estilo para a sobreposição modal */
-.modal_overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilo para a caixa modal */
-.modal {
-    background-color: white;
-    border-radius: 16px;
-    width: 660px;
-    height: 413px;
-    position: relative;
-}
-
-/* Estilo para a imagem dentro da modal */
-.modal_image-container img {
-    margin: 30px;
-    width: 600px;
-    height: 200px;
-    border-radius: 15px;
-}
-
-/* Estilo para o conteúdo dentro da modal */
-.modal_content {
-    text-align: center;
-}
-
-/* Estilo para o nome dentro da modal */
-.modal_content .nome {
-    font-size: 24px;
-}
-
-/* Estilo para o chef dentro da modal */
-.modal_content .chef {
-    font-size: 18px;
-    color: #777777;
-}
-
-/* Estilo para o botão de fechar modal */
-.modal_close {
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-/* Estilo para o texto no botão de fechar modal */
-.modal_close p {
-    color: #999999;
-    margin-top: 10px;
 }
 
 /* Estilo para a seção do blog */
@@ -259,12 +196,37 @@ footer p {
     opacity: 0.7;
 }
 
-/* Estilo para links no conteúdo do post do blog */
-.blog-post a {
-    text-decoration: none;
-    color: #ebc136;
-    font-weight: bold;
+
+
+/* Estilo para o botão "Leia Mais" DO BLOG */
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+/* Estilo para o botão "Leia Mais" DO BLOG */
+.blog-post .leia-mais-button {
+    font-size: 24px;
+    background-color: #ebc136; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 30px; /* Espaçamento interno do botão */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Mantém o botão no rodapé do post */
+}
+
+/* Estilo para o botão "Leia Mais" no hover DO BLOG  */
+.blog-post .leia-mais-button:hover {
+    background-color: #333;
+}
+
+
+
 
 
 #cookieConsent {
@@ -332,6 +294,7 @@ footer p {
 }
 
 
+/* Estilo para o botão "Leia Mais" do quer ver mais receitas clique aqui */
 .leia-mais-button {
     font-size: 24px;
     background-color: #ebc136; /* Cor de fundo do botão */
@@ -344,9 +307,11 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
+/* Estilo para o botão "Leia Mais" do quer ver mais receitas clique aqui */
 .leia-mais-button:hover {
     background-color: #333; /* Altera a cor de fundo ao passar o mouse */
 }
+
 
 /* Adicione ao seu arquivo CSS */
 .espaco {
@@ -365,7 +330,7 @@ footer p {
     background-color: #fff; /* Adapte a cor de fundo conforme necessário */
 }
 
-/* Adicione ao seu arquivo CSS */
+/* Botao de VOLTAR PARA O INICIO*/
 .back-button {
     display: block;
     width: 200px; /* Largura desejada do botão */
@@ -377,6 +342,7 @@ footer p {
     border-radius: 5px;
     text-align: center;
 }
+
 
 .back-button:hover {
     background-color: #333; /* Altera a cor de fundo ao passar o mouse */
