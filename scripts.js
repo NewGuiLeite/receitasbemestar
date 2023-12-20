@@ -25,7 +25,7 @@ function exibirMensagemNaTela(mensagem) {
 function enviarMensagemWhatsapp(nome, mensagem) {
     // Substitua 'SEU_NUMERO_DESTINO' com o número de telefone para onde deseja enviar a mensagem
     const phoneNumber = '18996100443';
-    const mensagemFormatada = `Ola, Quero Enviar Minha Receita, Nova mensagem de ${nome}: ${mensagem}`;
+    const mensagemFormatada = `Ola, Quero Enviar Minha Receita, Nome> ${nome}: ${mensagem}`;
 
     // Constrói o link para abrir o WhatsApp Web com o mensagem preenchida
     const apiUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensagemFormatada)}`;
@@ -48,7 +48,7 @@ function submitRecipe() {
     }
 
     // Constrói o corpo da mensagem
-    const mensagem = `Nova mensagem de ${chefName}: ${recipeDescription}`;
+    const mensagem = `Descrição da Receita: ${chefName}: ${recipeDescription}`;
 
     // Chama a função para exibir a mensagem na tela
     exibirMensagemNaTela('Receita enviada com sucesso!');
