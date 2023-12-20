@@ -388,3 +388,19 @@ footer p {
 .espaco {
     margin-bottom: 10px; /* Ajuste o valor conforme necessário */
 }
+
+
+  /* Adicione este estilo para a imagem no rodapé */
+  .footer-image {
+    max-width: 50px; /* Defina a largura máxima desejada */
+    height: auto;
+}
+
+/* Adicione este estilo para os botões do Facebook e WhatsApp */
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-buttons .btn {
+    margin-right: 10px;
+}
