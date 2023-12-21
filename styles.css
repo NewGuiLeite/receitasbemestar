@@ -38,42 +38,10 @@ header img {
     margin-top: 5px;
 }
 
-
-.recipe-details p,
-.recipe-instructions ol,
-.recipe-notes p {
-    font-size: 16px;
-    opacity: 0.7;
-    margin-bottom: 15px;
-}
-
-.post-meta {
-    font-size: 14px;
-    color: #777;
-}
-
-footer {
-    margin-top: 20px;
-    background-color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    font-size: 14px;
-    color: #777;
-}
-
 /* Estilo de navegação, alinhando à direita */
 nav {
     display: flex;
     align-items: center;
-}
-
-/* Estilo dos links de navegação */
-.links {
-    margin-left: auto;
 }
 
 /* Estilo dos links de navegação */
