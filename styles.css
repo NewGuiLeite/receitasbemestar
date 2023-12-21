@@ -49,6 +49,11 @@ nav {
     margin-left: auto;
 }
 
+/* Estilo dos links de navegação */
+.links {
+    margin-left: auto;
+}
+
 .links a {
     text-decoration: none;
     color: black;
