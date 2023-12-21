@@ -352,35 +352,44 @@ footer p {
 .card {
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #ebc136;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-align: center;
+    color: #333; /* Cor do texto */
 }
 
+/* Estilo para os cards */
 .card:hover {
     transform: scale(1.05);
+    text-align: center;
+    color: #333; /* Cor do texto */
 }
-
+/* Estilo para os cards */
 .recipe_image-container {
     overflow: hidden;
     border-radius: 8px;
 }
-
+/* Estilo para os cards */
 .recipe_image-container img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    width: 300px;
+    height: 180px;
+    margin-top: 5px;
 }
-
+/* Estilo para os cards */
 .recipe_info {
     margin-top: 10px;
 }
 
+/* Estilo para os cards */
 .nome {
     font-weight: bold;
 }
-
+/* Estilo para os cards */
 .chef {
     color: #555;
 }
