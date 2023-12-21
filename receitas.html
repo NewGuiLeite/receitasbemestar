@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    
-    
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
@@ -24,6 +22,7 @@ crossorigin="anonymous"></script>
 
   gtag('config', 'G-K3KGMMNVB6');
 </script>
+
         
 <!-- Adicione esta linha para incluir o Bootstrap JavaScript -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -34,34 +33,32 @@ crossorigin="anonymous"></script>
     <title>Receitas - Bem Estar</title>
     <link rel="stylesheet" href="styles.css">
 
+   
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
         }
 
-       /* Container principal para limitar a largura e centralizar a página */
-       .container {
+        .container {
             max-width: 940px;
             margin: 0 auto;
         }
 
-        /* Estilo do cabeçalho, com sombra sutil e padding */
         header {
             background-color: #fff;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
             padding: 15px 0;
         }
 
-        
-             
+       
                     /* Estilo do logotipo no cabeçalho */
-            header img {
+                    header img {
                 width: 150px;
                 height: 50px;
                 margin-top: 5px;
             }
-
+            
         nav {
             display: flex;
             align-items: center;
@@ -144,17 +141,16 @@ crossorigin="anonymous"></script>
             </div>
         </header>
         
-    </div>
+    </form>
+</section>
 
-    <section class="blog">
+<section class="blog">
     <form class="form-inline ml-2">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar receitas"
             aria-label="Search" id="searchInput">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="button"
-            onclick="searchRecipes()">Pesquisar</button>
-
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchRecipes()">Pesquisar</button>
     </form>
-    </section>
+</section>
     
     <section class="blog">
         <h1>Blog de Receitas</h1>
@@ -314,12 +310,15 @@ crossorigin="anonymous"></script>
         </div>
     </section>
 
- <!-- Botão Voltar -->
+         
+
+     <!-- Botão Voltar -->
 <div class="mais_acessadas">
     <div class="container">
         <a href="./index.html" class="back-button">Voltar para o Início</a>
     </div>
 </div>
+
 
 <footer>
     <div class="container">
@@ -329,18 +328,20 @@ crossorigin="anonymous"></script>
     </div>
 </footer>
 
-    <script>
-        function searchRecipes() {
-            var searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            var blogPosts = document.querySelectorAll('.blog-post');
+   
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function searchRecipes() {
+        var searchTerm = $('#searchInput').val().toLowerCase();
 
-            blogPosts.forEach(function (post) {
-                var title = post.querySelector('h2').innerText.toLowerCase();
-                var shouldDisplay = title.includes(searchTerm);
-                post.style.display = shouldDisplay ? 'block' : 'none';
-            });
-        }
-    </script>
+        $('.blog-post').each(function () {
+            var title = $(this).find('h2').text().toLowerCase();
+            var shouldDisplay = title.includes(searchTerm);
+
+            $(this).toggle(shouldDisplay);
+        });
+    }
+</script>
 </body>
 
 </html>

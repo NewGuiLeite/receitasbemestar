@@ -31,42 +31,38 @@ crossorigin="anonymous"></script>
 
     <title>Sobre - Bem Estar</title>
     <link rel="stylesheet" href="styles.css">
+
+    
     <style>
-        /* Estilo geral do corpo da página */
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
         }
 
-        /* Container principal para limitar a largura e centralizar a página */
         .container {
             max-width: 940px;
             margin: 0 auto;
         }
 
-        /* Estilo do cabeçalho, com sombra sutil e padding */
         header {
             background-color: #fff;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
             padding: 15px 0;
         }
 
-        
-             
+       
                     /* Estilo do logotipo no cabeçalho */
-            header img {
+                    header img {
                 width: 150px;
                 height: 50px;
                 margin-top: 5px;
             }
-
-        /* Estilo de navegação, alinhando à direita */
+            
         nav {
             display: flex;
             align-items: center;
         }
 
-        /* Estilo dos links de navegação */
         .links {
             margin-left: auto;
         }
@@ -79,58 +75,30 @@ crossorigin="anonymous"></script>
             transition: color 0.3s ease;
         }
 
-        /* Estilo para links ativos ou hover */
         .links a.active,
         .links a:hover {
             color: #ebc136;
             font-weight: bold;
         }
 
-        .blog-post img {
+        .recipes .col-md-4,
+        .blog-post {
+            margin-bottom: 2rem;
+        }
+
+        .image-container img {
             width: 100%;
+            height: auto;
             border-radius: 10px;
             margin-bottom: 20px;
         }
 
-        .recipe-details,
-        .recipe-instructions,
-        .recipe-notes {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .recipe-details h3,
-        .recipe-instructions h3,
-        .recipe-notes h3 {
-            color: #333;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .recipe-details h4,
-        .recipe-instructions h4,
-        .recipe-notes h4 {
-            color: #ebc136;
-            font-size: 18px;
-            margin-top: 15px;
-        }
-
-        .recipe-details p,
-        .recipe-instructions ol,
-        .recipe-notes p {
+        .recipe_info p {
             font-size: 16px;
             opacity: 0.7;
             margin-bottom: 15px;
         }
 
-        .post-meta {
-            font-size: 14px;
-            color: #777;
-        }
-
-       
         footer {
             margin-top: 20px;
             background-color: #fff;
@@ -145,6 +113,7 @@ crossorigin="anonymous"></script>
         }
     </style>
 </head>
+
 
 <body>
     <div class="container">
@@ -171,8 +140,8 @@ crossorigin="anonymous"></script>
                 </nav>
             </div>
         </header>
-        
-    </div>
+    </section>
+    </form>
 
     <section class="blog">
         <div class="container">
@@ -199,26 +168,23 @@ crossorigin="anonymous"></script>
             </div>
         </div>
     </section>
-    
-    
-<!-- Botão Voltar -->
+            
+
+     <!-- Botão Voltar -->
 <div class="mais_acessadas">
     <div class="container">
         <a href="./index.html" class="back-button">Voltar para o Início</a>
     </div>
 </div>
 
-    <section class="recipes">
-        <!-- Adicione receitas conforme necessário -->
-    </section>
 
-    <footer>
-        <div class="container">
-            <footer>
-                <p>Todos os direitos reservados, Tempero Bom receitas.</p>
-                <p>O Tempero Bom Receitas usa Politicas de Privacidade para garantir que você tenha uma boa experiência no blog. <a href="politicasprivacidade.html">Mais informações</a>.</p>
-        </div>
-    </footer>
+<footer>
+    <div class="container">
+        <footer>
+            <p>Todos os direitos reservados, Receitas Bem Estar.</p>
+            <p>O Receitas Bem Estar usa Politicas de Privacidade para garantir que você tenha uma boa experiência no blog. <a href="politicasprivacidade.html">Mais informações</a>.</p>
+    </div>
+</footer>
 
     <script src="scripts.js"></script>
 </body>

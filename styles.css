@@ -147,7 +147,7 @@ footer p {
     color: #777;
 }
 
-/* Estilo para a seção do blog */
+/* Estilo básico para a seção do blog */
 .blog {
     max-width: 940px;
     margin: 20px auto;
@@ -156,12 +156,20 @@ footer p {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para o título do blog */
-.blog h1 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
+/* Estilo para a imagem no blog */
+.blog-img-container {
+    border: 10px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo para a imagem ajustada */
+.blog-imgajuste {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* Estilo para a seção de posts do blog */
@@ -176,8 +184,11 @@ footer p {
     background-color: #f5f5f5;
     padding: 15px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Garante que o post ocupe toda a altura do contêiner pai */
 }
-
 /* Estilo para o título do post do blog */
 .blog-post h2 {
     font-size: 24px;
@@ -196,35 +207,27 @@ footer p {
     opacity: 0.7;
 }
 
-
-
-/* Estilo para o botão "Leia Mais" DO BLOG */
-.blog-post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-/* Estilo para o botão "Leia Mais" DO BLOG */
+/* Estilo para o botão "Leia Mais" no blog */
 .blog-post .leia-mais-button {
     font-size: 24px;
-    background-color: #ebc136; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 30px; /* Espaçamento interno do botão */
+    background-color: #ebc136;
+    color: #fff;
+    padding: 10px 30px;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: auto; /* Mantém o botão no rodapé do post */
+    text-align: center; 
+    width: 200px; /* Largura fixa para o botão */
+    margin: 20px auto 0; /* Adiciona margens para centralizar verticalmente e colar no topo */
+    display: block;
 }
 
-/* Estilo para o botão "Leia Mais" no hover DO BLOG  */
+/* Estilo para o botão "Leia Mais" no hover do blog */
 .blog-post .leia-mais-button:hover {
     background-color: #333;
 }
-
 
 
 
@@ -412,4 +415,51 @@ footer p {
 
 .social-buttons .btn {
     margin-right: 10px;
+}
+
+
+/* Regra de mídia para dispositivos menores que 600px (celulares em modo retrato) */
+@media (max-width: 600px) {
+    header img {
+        width: 100%;
+    }
+
+    .links {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .links a {
+        margin: 5px 0;
+    }
+
+    #wrapper .info {
+        margin: 20px 0;
+    }
+
+    .recipes {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .blog-posts {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .back-button {
+        width: 100%;
+        max-width: none;
+    }
+
+    .card {
+        width: 100%; /* Ocupa toda a largura do contêiner pai */
+    }
+
+    .recipe_image-container img {
+        width: 100%; /* Ocupa toda a largura do contêiner pai */
+    }
+
+
+
+
 }
