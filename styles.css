@@ -481,7 +481,12 @@ footer p {
         width: 100%; /* Ocupa toda a largura do contêiner pai */
     }
 
-
-
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
 
 }

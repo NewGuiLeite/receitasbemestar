@@ -56,6 +56,7 @@
             margin-top: 5px;
         }
 
+        
         /* Estilo de navegação, alinhando à direita */
         nav {
             display: flex;
@@ -83,12 +84,12 @@
         }
 
         .blog-post img {
-    width: 100%;
-    height: 300px; /* Defina a altura desejada */
-    object-fit: cover; /* Isso mantém a proporção da imagem */
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
+            width: 100%;
+            height: 300px; /* Defina a altura desejada */
+            object-fit: cover; /* Isso mantém a proporção da imagem */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
 
 
         .recipe-details,
@@ -141,6 +142,55 @@
             font-size: 14px;
             color: #777;
         }
+
+
+.banner {
+    position: relative;
+}
+
+.banner__imagem {
+    background-image: url('./img/banner2.jpg'); /* Ajuste o caminho conforme necessário */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px; /* Ajuste a altura conforme necessário */
+}
+
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__imagem {
+        height: 150px; /* Ajuste a altura conforme necessário */
+    }
+
+    .banner__titulo {
+        font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__imagem {
+        height: 200px; /* Ajuste a altura conforme necessário */
+    }
+
+    .banner__titulo {
+        font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
+
+
+                      
     </style>
 
     <body>
@@ -172,8 +222,16 @@
         </form>
     </section>
     
+     <!-- banner ants com foto -->
+    <section class="banner">
+        <div class="banner__imagem"></div>
+        <h2 class="banner__titulo">Aproveite as melhores receitas!</h2>
+    </section>
+
+     <!-- começo do receitas-->
+
     <section class="blog">
-        <h1>Blog de Receitas</h1>
+        <h1>Receitas</h1>
         <div class="blog-posts">
 
             <!-- Adicione posts do blog aqui -->
@@ -181,7 +239,7 @@
                 <h2>Pave Tradicional</h2>
                 <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
                 <p>Pavê Clássico: Uma tentadora harmonia de camadas, onde o suave creme branco se entrelaça com o envolvente ganache. Uma receita familiar que transcende o comum.</p>
-                <a href="pavetradicional.html" class="leia-mais-button">Leia Mais</a>
+                <a href="pavetradicional.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
 
@@ -190,7 +248,7 @@
                 <h2>Bombom de Morango na Travessa</h2>
                 <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
                 <p>Bombom de Morango na Travessa: uma deliciosa combinação de morangos envoltos em creme branco e ganache, revelando o toque especial da receita transmitida pela minha família.</p>
-                <a href="bombommorangotravessa.html" class="leia-mais-button">Leia Mais</a>
+                <a href="bombommorangotravessa.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
             <!-- Adicione posts do blog aqui -->
@@ -198,7 +256,7 @@
                 <h2>Pudim de Leite Condensado</h2>
                 <p class="post-meta">Por: Guilherme Leite em 20 de Dezembro de 2023</p>
                 <p>Desfrute da indulgência suprema com nosso irresistível Pudim de Leite Condensado, uma explosão de cremosidade e doçura que derrete na boca, proporcionando uma experiência única de sabor e prazer.</p>
-                <a href="pudimleitecondensado.html" class="leia-mais-button">Leia Mais</a>
+                <a href="pudimleitecondensado.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
             <!-- Adicione posts do blog aqui -->
@@ -206,42 +264,42 @@
                 <h2>Salada de Macarrão</h2>
                 <p class="post-meta">Por: Guilherme Leite em 21 de Dezembro de 2023</p>
                 <p>Deliciosa Salada de Macarrão: Uma combinação perfeita de sabores que inclui macarrão parafuso, presunto, mussarela, vegetais frescos e um toque especial de maionese. Simples e irresistível.</p>
-                <a href="saladademacarrao.html" class="leia-mais-button">Leia Mais</a>
+                <a href="saladademacarrao.html" class="leia-mais-button">Ver Receita</a>
             </div>
     
             <div class="blog-post">
                 <h2>Bolo Formigueiro Fofinho e Macio</h2>
                 <p class="post-meta">Por: Carla Duclos em 16 de Dezembro de 2023</p>
                 <p>Explore a receita de um irresistível bolo formigueiro, conhecido por sua textura fofinha e maciez.</p>
-                <a href="boloformigueirofofi.html" class="leia-mais-button">Leia Mais</a>
+                <a href="boloformigueirofofi.html" class="leia-mais-button">Ver Receita</a>
             </div>
     
             <div class="blog-post">
                 <h2>Pão de Queijo de Liquidificador</h2>
                 <p class="post-meta">Por: Vanda Peruche em 16 de Dezembro de 2023</p>
                 <p>Aprenda a fazer um saboroso pão de queijo no liquidificador, preparado com queijo parmesão. Uma receita irresistível.</p>
-                <a href="paodequeijoliqui.html" class="leia-mais-button">Leia Mais</a>
+                <a href="paodequeijoliqui.html" class="leia-mais-button">Ver Receita</a>
             </div>
     
             <div class="blog-post">
                 <h2>Bolo de Cenoura com Cobertura de Chocolate</h2>
                 <p class="post-meta">Por: Carla Duclos em 16 de Dezembro de 2023</p>
                 <p>Delicioso clássico bolo de cenoura com calda de chocolate. Este bolo fica super fofinho, uma verdadeira delícia.</p>
-                <a href="bolocenourachoco.html" class="leia-mais-button">Leia Mais</a>
+                <a href="bolocenourachoco.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
             <div class="blog-post">
                 <h2>Molho Verde de Abacate 🥑</h2>
                 <p class="post-meta">Por: Bruna Lima em 17 de Dezembro de 2023</p>
                 <p>Descubra a receita de um delicioso molho verde de abacate, conhecido por sua cremosidade e sabor incrível. Ideal para lanches e saladas.</p>
-                <a href="molhoverdeabacate.html" class="leia-mais-button">Leia Mais</a>
+                <a href="molhoverdeabacate.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
             <div class="blog-post">
                 <h2>Maionese Caseira Temperada Simples e Fácil (Molho Verde)</h2>
                 <p class="post-meta">Por: Claudia Rodrigues em 17 de Dezembro de 2023</p>
                 <p>Descubra a receita de um deliciosa Maionese Caseira Temperada, conhecido por sua cremosidade e sabor incrível. Ideal para lanches e saladas.</p>
-                <a href="molhoverdetradicional.html" class="leia-mais-button">Leia Mais</a>
+                <a href="molhoverdetradicional.html" class="leia-mais-button">Ver Receita</a>
             </div>
             
             
@@ -255,7 +313,7 @@
 
 <!-- Seção "Quer ver mais receitas? Clique aqui" -->
 <section class="leia-mais-section">
-    <h2>Quer ver mais receitas? Clique aqui</h2>
+    <h2>Quer ver mais receitas?</h2>
     <button class="leia-mais-button" onclick="window.location.href='receitas.html'">Leia mais</button>
 </section>
 
