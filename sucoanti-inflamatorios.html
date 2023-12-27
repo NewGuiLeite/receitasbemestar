@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <title>Sucos e Vitaminas - Suco Anti-Inflamatório</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+              <!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7341100982858254"
+crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-7341100982858254">
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3KGMMNVB6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K3KGMMNVB6');
+</script>
+      
+<!-- Adicione esta linha para incluir o Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        /* Estilo do cabeçalho, com sombra sutil e padding */
+        header {
+            background-color: #fff;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+
+        /* Estilo do logotipo no cabeçalho */
+        header img {
+            width: 150px;
+            height: 50px;
+            margin-top: 5px;
+        }
+
+        /* Estilo de navegação, alinhando à direita */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Estilo dos links de navegação */
+        .links {
+            margin-left: auto;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        /* Estilo para links ativos ou hover */
+        .links a.active,
+        .links a:hover {
+            color: #ebc136;
+            font-weight: bold;
+        }
+
+        .blog-post img {
+    width: 100%;
+    height: 300px; /* Defina a altura desejada */
+    object-fit: cover; /* Isso mantém a proporção da imagem */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+        .recipe-details,
+        .recipe-instructions,
+        .recipe-notes {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-details h3,
+        .recipe-instructions h3,
+        .recipe-notes h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-details h4,
+        .recipe-instructions h4,
+        .recipe-notes h4 {
+            color: #ebc136;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .recipe-details p,
+        .recipe-instructions ol,
+        .recipe-notes p {
+            font-size: 16px;
+            opacity: 0.7;
+            margin-bottom: 15px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logo.png" alt="Logo Foodfy" />
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="links navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="index.html">Home</a>
+                            <a class="nav-item nav-link" href="receitas.html">Receitas</a>
+                            <a class="nav-item nav-link" href="sucosevitaminas.html">Sucos e Vitaminas</a>
+                            <a class="nav-item nav-link" href="sobre.html">Sobre</a>
+                            <a class="nav-item nav-link" href="contato.html">Contato</a>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+    </form>
+</section>
+
+  <!-- Receitas de suco detox -->
+  <section class="blog">
+    <div class="container">
+        <div class="blog">
+            <div class="blog-posts">
+                 <!-- Adicione posts do blog aqui -->
+                 <div class="blog-post">
+                    <h2>Sucos anti-inflamatórios podem reduzir a dor e inflamação e promover o sistema imunológico</h2>
+                    <p>O sucos anti-inflamatórios é um grande aliado às dietas convencionais. Além de proporcionar o aumento do consumo de frutas e vegetais diariamente, ele também ajuda a controlar a inflamação, uma das principais causas do desenvolvimento de doenças crônicas.
+
+                        A inflamação é responsável por causar danos às células arteriais, o que pode resultar em diversos tipos de problemas, incluindo condições inflamatórias crônicas, como doenças cardiovasculares e artrite.
+
+                        Por isso, diversos especialistas da área da saúde recomendam a minimização natural da inflamação através do consumo de alimentos com propriedades anti-inflamatórias.
+                        
+                        Suco de laranja com gengibre
+                        As frutas cítricas, como a laranja, além de reduzirem a inflamação, também são ótimas fontes de antioxidantes. </p>
+                    <img src="img/sucosantiflam.jpg" alt="Suco anti-inflamatório pode reduzir a dor e inflamação e promover o sistema imunológico">
+                <!-- Suco anti-inflamatório 1: Laranja com Gengibre -->
+                <div class="blog-post">
+                    
+                    <h2>🍊 Suco de Laranja com Gengibre</h2>
+                
+
+                    <div class="recipe-details">
+                        <h3>Detalhes da Receita</h3>
+
+                        <h4>Rendimento</h4>
+                        <p>1 porção</p>
+
+                        <h4>Tempo de Preparo</h4>
+                        <p>10 minutos</p>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Ingredientes:</h3>
+                        <ul>
+                            <li>1 xícara de leite de amêndoas sem açúcar</li>
+                            <li>1 cenoura, cortada em cubos</li>
+                            <li>1 laranja grande, descascada e picada grosseiramente</li>
+                            <li>½ colher de chá de gengibre fresco, descascado e ralado</li>
+                            <li>1 colher de sopa de sementes de cânhamo</li>
+                            <li>¼ de colher de chá de canela em pó</li>
+                        </ul>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Modo de preparo:</h3>
+                        <ol>
+                            <li>Coloque todos os ingredientes em um liquidificador de alta velocidade.</li>
+                            <li>Bata até ficar homogêneo.</li>
+                            <li>Sirva imediatamente.</li>
+                        </ol>
+                    </div>
+
+          
+                </div>
+
+                <!-- Suco anti-inflamatório 2: Abacaxi com Aipo -->
+                <div class="blog-post">
+                    <h2>🍍 Suco de Abacaxi com Aipo</h2>
+                 
+
+                    <div class="recipe-details">
+                        <h3>Detalhes da Receita</h3>
+
+                        <h4>Rendimento</h4>
+                        <p>1 porção</p>
+
+                        <h4>Tempo de Preparo</h4>
+                        <p>10 minutos</p>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Ingredientes:</h3>
+                        <ul>
+                            <li>4 talos de aipo</li>
+                            <li>½ pepino</li>
+                            <li>1 xícara de abacaxi</li>
+                            <li>½ maçã verde</li>
+                            <li>1 xícara de espinafre</li>
+                            <li>Suco de um limão</li>
+                            <li>Gengibre a gosto</li>
+                        </ul>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Modo de preparo:</h3>
+                        <ol>
+                            <li>Bata todos os ingredientes no liquidificador.</li>
+                            <li>Aproveite!</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <!-- Suco anti-inflamatório 3: Verde Detox -->
+                <div class="blog-post">
+                    <h2>🌿 Suco Verde Detox</h2>
+           
+
+                    <div class="recipe-details">
+                        <h3>Detalhes da Receita</h3>
+
+                        <h4>Rendimento</h4>
+                        <p>1 porção</p>
+
+                        <h4>Tempo de Preparo</h4>
+                        <p>10 minutos</p>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Ingredientes:</h3>
+                        <ul>
+                            <li>8 talos de aipo</li>
+                            <li>1 pepino</li>
+                            <li>Um punhado de salsinha</li>
+                            <li>3 folhas de couve ou espinafre</li>
+                            <li>1 maçã verde</li>
+                            <li>Suco de um limão</li>
+                        </ul>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Modo de preparo:</h3>
+                        <ol>
+                            <li>Adicione todos os ingredientes no liquidificador.</li>
+                            <li>Sirva gelado.</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <!-- Suco anti-inflamatório 4: Abacaxi com Cúrcuma -->
+                <div class="blog-post">
+                    <h2>🍍 Suco de Abacaxi com Cúrcuma</h2>
+                 
+
+                    <div class="recipe-details">
+                        <h3>Detalhes da Receita</h3>
+
+                        <h4>Rendimento</h4>
+                        <p>1 porção</p>
+
+                        <h4>Tempo de Preparo</h4>
+                        <p>10 minutos</p>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Ingredientes:</h3>
+                        <ul>
+                            <li>1 xícara de água ou do líquido de sua preferência, como leites vegetais</li>
+                            <li>2 xícaras de abacaxi picado</li>
+                            <li>1 banana</li>
+                            <li>1 colher de chá de canela</li>
+                            <li>1 colher de sopa de cúrcuma</li>
+                            <li>1 colher de sopa de chia</li>
+                        </ul>
+                    </div>
+
+                    <div class="recipe-instructions">
+                        <h3>Modo de preparo:</h3>
+                        <ol>
+                            <li>Bata todos os ingredientes no liquidificador até obter um líquido homogêneo.</li>
+                            <li>Se preferir, adicione o abacaxi congelado e faça um smoothie.</li>
+                            <li>Sirva imediatamente.</li>
+                        </ol>
+                    </div>
+
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+     <!-- Botão Voltar -->
+<div class="mais_acessadas">
+    <div class="container">
+        <a href="./sucosevitaminas.html" class="back-button">Voltar para o Início</a>
+    </div>
+</div>
+
+   
+<footer>
+    <p>&copy; 2023 Receitas Bem Estar. Todos os direitos reservados.</p>
+    <p>
+        Proporcionamos uma experiência positiva em nosso blog através das
+        <a href="https://receitasbemestar.com/politicasprivacidade" aria-label="Leia mais sobre nossas políticas de privacidade" target="_blank">Políticas de Privacidade</a>
+        e
+        <a href="https://receitasbemestar.com/termosdeuso" aria-label="Leia mais sobre nossos Termos de Uso" target="_blank">Termos de Uso</a>.
+    </p>
+    
+    <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=61554800521737" class="btn btn-primary" role="button" target="_blank" aria-label="Siga-nos no Facebook">
+            <i class="fab fa-facebook-f"></i> Siga-nos no Facebook
+        </a>
+    </div>
+</footer>
+   
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
