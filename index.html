@@ -146,53 +146,28 @@
             color: #777;
         }
 
+        .banner {
+            position: relative;
+        }
 
-.banner {
-    position: relative;
-}
+        .banner__imagem {
+         
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+       
+            object-fit: cover;
+            max-width: 100%;
+        
 
-.banner__imagem {
-    background-image: url('./img/banner2.jpg'); /* Ajuste o caminho conforme necessário */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+           
     width: 100%;
-    height: 300px; /* Ajuste a altura conforme necessário */
-}
+    height: auto;
+    max-width: 1200px;
+    max-height: 400px;
+        }
 
-.banner__titulo {
-    color: #fdfdfd;
-    font-family: Pacifico, cursive;
-    position: absolute;
-    left: 50%;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    top: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-
-@media screen and (min-width: 0) {
-    .banner__imagem {
-        height: 150px; /* Ajuste a altura conforme necessário */
-    }
-
-    .banner__titulo {
-        font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .banner__imagem {
-        height: 200px; /* Ajuste a altura conforme necessário */
-    }
-
-    .banner__titulo {
-        font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
-    }
-}
-
-
+      
                       
     </style>
 
@@ -226,11 +201,16 @@
         </form>
     </section>
     
-     <!-- banner ants com foto -->
-    <section class="banner">
+   <!-- banner antes com foto -->
+<section class="banner">
+    <section class="blog">
+        <a href="receitas.html">
+            <img src="img/bannernovo.jpg" class="img-fluid" alt="Banner">
+        </a>
         <div class="banner__imagem"></div>
-        <h2 class="banner__titulo">Aproveite as melhores receitas!</h2>
     </section>
+</section>
+
 
      <!-- começo do receitas-->
 
