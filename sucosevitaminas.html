@@ -199,6 +199,9 @@ margin-bottom: 20px;
     </form>
 </section>
 
+
+
+
 <section class="blog">
 
     <div class="blog-posts">
@@ -217,10 +220,12 @@ margin-bottom: 20px;
         <!-- Adicione mais posts do blog conforme necessário -->
 
     </div>
-</section>
 
 
-<section class="blog">
+
+<!-- Adicione um espaço aqui -->
+<div class="espaco"></div>
+
 
     <div class="blog-posts">
 
@@ -238,10 +243,13 @@ margin-bottom: 20px;
         <!-- Adicione mais posts do blog conforme necessário -->
 
     </div>
-</section>
 
 
-<section class="blog">
+    
+<!-- Adicione um espaço aqui -->
+<div class="espaco"></div>
+
+
 
     <div class="blog-posts">
 
@@ -260,10 +268,14 @@ margin-bottom: 20px;
         <!-- Adicione mais posts do blog conforme necessário -->
 
     </div>
-</section>
 
 
-<section class="blog">
+
+    
+<!-- Adicione um espaço aqui -->
+<div class="espaco"></div>
+
+
 
     <div class="blog-posts">
 
@@ -285,7 +297,7 @@ margin-bottom: 20px;
 </section>
 
         
-            
+
 
      <!-- Botão Voltar -->
 <div class="mais_acessadas">
@@ -311,19 +323,25 @@ margin-bottom: 20px;
     </div>
 </footer>
 
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
+    function removeAccents(str) {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
     function searchRecipes() {
-        var searchTerm = $('#searchInput').val().toLowerCase();
+        var searchTerm = removeAccents($('#searchInput').val().toLowerCase());
 
         $('.blog-post').each(function () {
-            var title = $(this).find('h2').text().toLowerCase();
+            var title = removeAccents($(this).find('h2').text().toLowerCase());
             var shouldDisplay = title.includes(searchTerm);
 
             $(this).toggle(shouldDisplay);
         });
     }
 </script>
+
 </body>
 
 </html>
