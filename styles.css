@@ -227,7 +227,7 @@ footer p {
 .blog-post .leia-mais-button {
     font-size: 24px;
     background-color: #ebc136;
-    color: #fff;
+    Color: #fff;
     padding: 10px 30px;
     text-decoration: none;
     border: none;
@@ -243,6 +243,7 @@ footer p {
 /* Estilo para o botão "Leia Mais" no hover do blog */
 .blog-post .leia-mais-button:hover {
     background-color: #333;
+    color: #fff;
 }
 
 
