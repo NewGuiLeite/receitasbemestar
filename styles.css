@@ -227,7 +227,7 @@ footer p {
 .blog-post .leia-mais-button {
     font-size: 24px;
     background-color: #ebc136;
-    Color: #fff;
+    color: #000;
     padding: 10px 30px;
     text-decoration: none;
     border: none;
@@ -243,7 +243,7 @@ footer p {
 /* Estilo para o botão "Leia Mais" no hover do blog */
 .blog-post .leia-mais-button:hover {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
 }
 
 
@@ -318,7 +318,7 @@ footer p {
 .leia-mais-button {
     font-size: 24px;
     background-color: #ebc136; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    color: #000; /* Cor do texto do botão */
     padding: 10px 30px; /* Espaçamento interno do botão */
     text-decoration: none;
     border: none;
@@ -329,7 +329,8 @@ footer p {
 
 /* Estilo para o botão "Leia Mais" do quer ver mais receitas clique aqui */
 .leia-mais-button:hover {
-    background-color: #333; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #333;
+    color: #ffffff;
 }
 
 
@@ -356,16 +357,18 @@ footer p {
     width: 200px; /* Largura desejada do botão */
     margin: 0 auto;
     background-color: #ebc136; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    color: #000; /* Cor do texto do botão */
     padding: 10px 20px; /* Espaçamento interno do botão */
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
+    font-weight: bold;
 }
 
 
 .back-button:hover {
-    background-color: #333; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #333;
+    color: #ffffff;
 }
 
 /* Estilo para os cards */
