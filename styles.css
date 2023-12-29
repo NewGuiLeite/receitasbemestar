@@ -486,6 +486,24 @@ footer p {
         padding: 0;
     }
     
+    .banner {
+        position: relative;
+    }
+
+    .banner__imagem {
+     
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+        max-height: 400px;
+    }
+
+  
     
     
 
