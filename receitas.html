@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
+
+        
         /* Estilo geral do corpo da página */
         body {
             font-family: 'Roboto', sans-serif;
@@ -131,6 +133,34 @@
             box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
         }
 
+                    .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centralizar o conteúdo na vertical */
+            margin-top: 20px;
+            }
+
+            .pagination p {
+            margin-right: 10px; /* Espaçamento entre o texto "Páginas" e os links */
+            }
+
+            .pagination a {
+            display: inline-block; /* Para que os links fiquem um ao lado do outro */
+            padding: 8px 14px;
+            margin: 0 4px;
+            text-decoration: none;
+            background-color: #f1f1f1;
+            color: #555;
+            border-radius: 5px;
+            }
+
+            .pagination a:hover {
+            background-color: #ddd;
+            }
+                
+
+
+
        
     </style>
    
@@ -187,7 +217,7 @@
     <section class="blog">
         <h1>Blog de Receitas</h1>
         <div class="blog-posts">
-
+          
             <!-- Adicione posts do blog aqui -->
 
             <div class="blog-post" id="pavetradicional">
@@ -534,23 +564,30 @@
                 <p>Desfrute do prazer inigualável do Cheesecake de Frutas Vermelhas. Uma mistura divina de cream cheese e frutas que transforma cada pedaço em uma experiência única e irresistível.</p>
                 <a href="cheesecakefrutasverme.html" class="leia-mais-button">Ver Receita</a>
             </div>
-          
-            
-            <!-- Adicione mais posts do blog aqui -->
-            <!-- Adicione posts do blog aqui -->
-            <!-- Adicione mais posts conforme necessário -->
         </div>
     </section>
 
-         
 
-     <!-- Botão Voltar -->
-<div class="mais_acessadas">
-    <div class="container">
-        <a href="./receitas.html" class="back-button">Voltar para o Início</a>
-    </div>
-</div>
-
+    <section class="blog">
+       <!-- 
+        <div class="pagination">
+          <p>Páginas</p>
+          <a href="index.html">1</a>
+          <a href="page2.html">2</a>
+          <a href="page3.html">3</a>  
+        </div>
+        Nova página adicionada -->
+        <!-- Adicione um espaço aqui
+        <div class="espaco"></div>
+       -->
+        <div class="mais_acessadas">
+          <div class="container">
+            <a href="./receitas.html" class="back-button">Voltar para o Início</a>
+          </div>
+        </div>
+      </section>
+      
+      
 
  
 <footer>
