@@ -164,8 +164,13 @@
                 background-color: #333;
                 color: #ffffff;
             }
+            
 
-        
+        /* Estilo para tornar a imagem dentro de .image-container responsiva */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
 
       
           
@@ -215,175 +220,129 @@
 
      <!-- começo do receitas-->
 
-    <section class="blog">
-        <h1>Receitas</h1>
+     <section class="blog">
+        <h1>Blog de Receitas</h1>
         <div class="blog-posts">
-
+          
             <!-- Adicione posts do blog aqui -->
-
 
             <div class="blog-post">
                 <h2>Lasanha Clássica</h2>
-               
                 <p class="post-meta">Por: Alemão em 03 Janeiro de 2024</p>
-                <p>Uma receita deliciosa que vai encantar seu paladar. A lasanha é um prato tradicional que combina camadas de massa, carne, queijo e molho. Uma explosão de sabores em cada garfada!</p>
+                <div class="image-container">
+                    <img src="img/lasanha.jpg" alt="Lasanha" class="img-fluid">
+                </div>
+                <p>
+                    Uma receita deliciosa que vai encantar seu paladar. A lasanha é um prato tradicional que combina camadas de massa, carne, queijo e molho. Uma explosão de sabores em cada garfada!</p>
                 <a href="lasanha.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
+            <div class="blog-post" id="bombommorangotravessa">
+                <h2>Bombom de Morango na Travessa</h2>
+                <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
+                <div class="image-container">
+                    <img src="img/bombomtravessa.jpg" alt="Bombom de Morango na Travessa" class="img-fluid">
+                </div>
+                <p>
+                    Bombom de Morango na Travessa: uma deliciosa combinação de morangos envoltos em creme branco e ganache, revelando o toque especial da receita transmitida pela minha família.</p>
+                <a href="bombommorangotravessa.html" class="leia-mais-button">Ver Receita</a>
+            </div>
+
+            
             <div class="blog-post">
                 <h2>Banoffe</h2>
                 <p class="post-meta">Por: Bruna em 01 Janeiro de 2024</p>
-                <p>Delicie-se com a irresistível Banoffe, uma sobremesa que combina bolacha de maisena crocante, creme de leite condensado, doce de leite, bananas frescas e uma cobertura exuberante de nata e açúcar refinado. Cada colherada é uma experiência única de sabor e textura!</p>
+                <div class="image-container">
+                    <img src="img/banoffe1.jpeg" alt="Banoffe" class="img-fluid">
+                </div>
+                <p>
+                    Encante-se com esta deliciosa Banoffe, uma sobremesa incrível que combina camadas de bolacha de maisena, creme de leite condensado, doce de leite, bananas frescas e uma irresistível cobertura de nata com açúcar refinado.</p>
                 <a href="banoffe.html" class="leia-mais-button">Ver Receita</a>
             </div>
+            
 
             <div class="blog-post">
                 <h2>Macarrão Pizza</h2>
                 <p class="post-meta">Por: Silvio em 31 de Dezembro de 2023</p>
-                <p>Desfrute da deliciosa combinação de macarrão parafuso coberto com mussarela derretida, presunto cozido, azeitonas, milho, tomates, cebola e temperado com azeite. Uma verdadeira explosão de sabores em cada garfada!</p>
+                <div class="image-container">
+                    <img src="img/macarraopizza.jpeg" alt="Macarrão Pizza" class="img-fluid">
+                </div>
+                <p>
+                    Delicie-se com este Macarrão Pizza, uma mistura irresistível de macarrão parafuso, mussarela ralada, presunto cozido, azeitonas, milho, tomates e cebola, regados com azeite. Uma explosão de sabores para o seu paladar.</p>
                 <a href="macarraopizza.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
-            <div class="blog-post">
-                <h2>Espaguete ao Molho de Camarão</h2>
-                <p class="post-meta">Por Adriano em 28 de Dezembro de 2023</p>
-                <p>Descubra a perfeição do Espaguete ao Molho de Camarão, onde a textura única da massa se une à indulgência de um molho rico com camarões suculentos. Uma experiência inesquecível para os amantes da culinária.</p>
-                <a href="espaguetecamarao.html" class="leia-mais-button">Ver Receita</a>
+
+            <div class="blog-post" id="ArrozTemperadoComBacalhau">
+                <h2>Arroz Temperado com Bacalhau</h2>
+                <p class="post-meta">Por: Vanda em 27 de Dezembro de 2023</p>
+                <div class="image-container">
+                    <img src="img/arroztemperadobacalhau.jpeg" alt="Arroz Temperado com Bacalhau" class="img-fluid">
+                </div>
+                <p>
+                    Desfrute de uma explosão de sabores e texturas com nosso irresistível Arroz Temperado com Bacalhau, uma combinação perfeita de ingredientes frescos que transforma cada garfada em uma experiência gastronômica única e deliciosa.
+                </p>
+                <a href="arroztemperadobacalhau.html" class="leia-mais-button">Ver Receita</a>
             </div>
+
+            
+            <div class="blog-post" id="pavetradicional">
+                <h2>Pavê Tradicional</h2>
+                <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
+                <div class="image-container">
+                    <img src="img/pavetradicional.jpg" alt="Pave Tradicional" class="img-fluid">
+                </div>
+                <p>
+                    Pavê Clássico: Uma tentadora harmonia de camadas, onde o suave creme branco se entrelaça com o envolvente ganache. Uma receita familiar que transcende o comum.</p>
+                <a href="pavetradicional.html" class="leia-mais-button">Ver Receita</a>
+            </div>
+
+
+            <div class="blog-post" id="Batata Cremosa na Travessa">
+                <h2>Batata Cremosa na Travessa</h2>
+                <p class="post-meta">Por: Bruna Lima em 21 de Dezembro de 2023</p>
+                <div class="image-container">
+                    <img src="img/batatanatravessa.jpg" alt="Batata Cremosa na Travessa" class="img-fluid">
+                </div>
+                <p>
+                    Descubra uma receita fácil e rápida para uma batata deliciosa e satisfatória, perfeita para refeições em família.</p>
+                <a href="batatacremosanatravessa.html" class="leia-mais-button">Ver Receita</a>
+            </div>          
             
 
-            <div class="blog-post">
+            <div class="blog-post" id="fricasse-frango">
                 <h2>Fricassê de Frango Gratinado</h2>
                 <p class="post-meta">Por: Isabela em 26 de Dezembro de 2023</p>
-                <p>Desfrute da delícia do Fricassê de Frango Gratinado, uma receita fácil de preparar que combina o sabor do frango temperado com alho, limão e páprica, envolto em um molho cremoso de creme de leite, requeijão e milho. Gratine no forno com mussarela, orégano e cebolinha para um toque final irresistível.</p>
+                <div class="image-container">
+                    <img src="img/fricassefrango.jpeg" alt="Fricassê de Frango Gratinado" class="img-fluid">
+                </div>
+                <p>
+                    Fricassê de Frango Gratinado: um prato delicioso e fácil de preparar. O frango temperado com alho, limão e páprica combina com um cremoso molho de creme de leite, requeijão e milho. Gratine no forno com mussarela, orégano e cebolinha para um toque final irresistível.
+                </p>                
                 <a href="fricassedefrango.html" class="leia-mais-button">Ver Receita</a>
             </div>
             
-
-            <div class="blog-post">
-                <h2>Pave Tradicional</h2>
-                <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
-                <p>Pavê Clássico: Uma tentadora harmonia de camadas, onde o suave creme branco se entrelaça com o envolvente ganache. Uma receita familiar que transcende o comum.</p>
-                <a href="pavetradicional.html" class="leia-mais-button">Ver Receita</a>
-            </div>           
-
-            <div class="blog-post">
-                <h2>Pave de Limão</h2>
-                <p class="post-meta">Por: Ivan em 24 de Dezembro de 2023</p>
-                <p>Delicie-se com a facilidade de um Pavê de Limão com Bolacha Champanhe, uma harmonia perfeita entre a suavidade cítrica e a crocância presente em cada camada. Uma verdadeira delícia capaz de encantar até os paladares mais exigentes!</p>
-                <a href="pavedelimao.html" class="leia-mais-button">Ver Receita</a>
+            <div class="blog-post" id="bolodefuba">
+                <h2>Bolo de Fubá Nº 1</h2>
+                <p class="post-meta">Por: Guilherme Leite em 17 de Dezembro de 2023</p>
+                <div class="image-container">
+                    <img src="img/bolodefuba.jfif" alt="Bolo de Fubá" class="img-fluid">
+                </div>
+                <p>Descubra a receita de um delicioso bolo de fubá da mãe, fácil de fazer e perfeito para diversas ocasiões.</p>
+                <a href="bolodefuba.html" class="leia-mais-button">Ver Receita</a>
             </div>
 
-             <!-- Adicione posts do blog aqui -->
-             <div class="blog-post">
-                <h2>Pavê de Chocotone</h2>
-                <p class="post-meta">Por: Maria em 23 de Dezembro de 2023</p>
-                <p> Surpreenda seus convidados com o nosso delicioso Pavê de Chocotone, uma sobremesa irresistível que combina a maciez do chocotone com a cremosidade de um recheio delicioso. Uma opção perfeita para as festas de fim de ano.</p>
-                <a href="pavedechocotone.html" class="leia-mais-button">Ver Receita</a>
+            <div class="blog-post" id="bolodefuba">
+                <h2>Cheesecake de Frutas Vermelhas</h2>
+                <p class="post-meta">Por: Guilherme Leite em 20 de Dezembro de 2023</p>
+                <div class="image-container">
+                    <img src="img/Cheesecakefv.jpg" alt="Bolo de Fubá" class="img-fluid">
+                </div>
+                <p>Desfrute do prazer inigualável do Cheesecake de Frutas Vermelhas. Uma mistura divina de cream cheese e frutas que transforma cada pedaço em uma experiência única e irresistível.</p>
+                <a href="cheesecakefrutasverme.html" class="leia-mais-button">Ver Receita</a>
             </div>
-            
-            <!-- Adicione posts do blog aqui -->
-            <div class="blog-post">
-                <h2>Panna Cotta de Natal</h2>
-                <p class="post-meta">Por: Thiago em 23 de Dezembro de 2023</p>
-                <p>Refresque-se com a nossa Panna Cotta de Natal: uma sobremesa leve e cremosa que combina perfeitamente a delicadeza da panna cotta com o frescor de frutas da estação. Simplesmente irresistível.</p>
-                <a href="pannacotta.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-
-    
-             <!-- Adicione posts do blog aqui -->
-             <div class="blog-post">
-                <h2>Frango Assado Inteiro Saboroso</h2>
-                <p class="post-meta">Por: Alexandre em 23 de Dezembro de 2023</p>
-                <p>Explore os sabores irresistíveis do nosso Frango Assado Inteiro Saboroso. Cada pedaço suculento, dourado e repleto de aromas promete transformar sua refeição em uma experiência única. Saboreie momentos inesquecíveis à mesa e descubra o prazer de cozinhar com paixão!</p>
-                <a href="frangoassado.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-            
-            <!-- Adicione posts do blog aqui -->
-            <div class="blog-post">
-                <h2>Bombom de Morango na Travessa</h2>
-                <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
-                <p>Bombom de Morango na Travessa: uma deliciosa combinação de morangos envoltos em creme branco e ganache, revelando o toque especial da receita transmitida pela minha família.</p>
-                <a href="bombommorangotravessa.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-
-            <!-- Adicione posts do blog aqui -->
-            <div class="blog-post">
-                <h2>Mousse Rapido e Facil</h2>
-                <p class="post-meta">Por: Bruna Lima em 24 de Dezembro de 2023</p>
-                <p>Experimente a praticidade de um Mousse de QUALQUER SABOR em apenas 3 ingredientes. Uma doce solução para os amantes da sobremesa.</p>
-                <a href="moussesimples.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-
-              <!-- Adicione posts do blog aqui -->
-              <div class="blog-post">
-                <h2>Salada de Maionese com Peito de Frango</h2>
-                <p class="post-meta">Por: Vanda em 26 de Dezembro de 2023</p>
-                <p>
-                    Explore uma deliciosa Maionese Cremosa, uma combinação perfeita de sabores e texturas que transforma cada colherada em uma experiência culinária memorável.
-                </p>  
-                <a href="saladamaionesecomfrango.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-          
-            <!-- Adicione posts do blog aqui -->
-            <div class="blog-post">
-                <h2>Arroz Temperado Simples</h2>
-                <p class="post-meta">Por: Andrea em 26 de Dezembro de 2023</p>
-                <p>
-                    Explore uma explosão de sabores e texturas com nosso delicioso Arroz Temperado, uma combinação perfeita de ingredientes frescos que transforma cada garfada em uma experiência gastronômica inesquecível.
-                </p> 
-                <a href="arroztemperadosimples.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-
-            <!-- Adicione posts do blog aqui -->
-            <div class="blog-post">
-                <h2>Salada de Macarrão</h2>
-                <p class="post-meta">Por: Guilherme Leite em 21 de Dezembro de 2023</p>
-                <p>Deliciosa Salada de Macarrão: Uma combinação perfeita de sabores que inclui macarrão parafuso, presunto, mussarela, vegetais frescos e um toque especial de maionese. Simples e irresistível.</p>
-                <a href="saladademacarrao.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-    
-            <div class="blog-post">
-                <h2>Bolo Formigueiro Fofinho e Macio</h2>
-                <p class="post-meta">Por: Carla Duclos em 16 de Dezembro de 2023</p>
-                <p>Explore a receita de um irresistível bolo formigueiro, conhecido por sua textura fofinha e maciez.</p>
-                <a href="boloformigueirofofi.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-    
-            <div class="blog-post">
-                <h2>Pão de Queijo de Liquidificador</h2>
-                <p class="post-meta">Por: Vanda Peruche em 16 de Dezembro de 2023</p>
-                <p>Aprenda a fazer um saboroso pão de queijo no liquidificador, preparado com queijo parmesão. Uma receita irresistível.</p>
-                <a href="paodequeijoliqui.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-    
-            <div class="blog-post">
-                <h2>Bolo de Cenoura com Cobertura de Chocolate</h2>
-                <p class="post-meta">Por: Carla Duclos em 16 de Dezembro de 2023</p>
-                <p>Delicioso clássico bolo de cenoura com calda de chocolate. Este bolo fica super fofinho, uma verdadeira delícia.</p>
-                <a href="bolocenourachoco.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-
-            <div class="blog-post">
-                <h2>Molho Verde de Abacate 🥑</h2>
-                <p class="post-meta">Por: Bruna Lima em 17 de Dezembro de 2023</p>
-                <p>Descubra a receita de um delicioso molho verde de abacate, conhecido por sua cremosidade e sabor incrível. Ideal para lanches e saladas.</p>
-                <a href="molhoverdeabacate.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-
-            <div class="blog-post">
-                <h2>Maionese Caseira Temperada Simples e Fácil (Molho Verde)</h2>
-                <p class="post-meta">Por: Claudia Rodrigues em 17 de Dezembro de 2023</p>
-                <p>Descubra a receita de um deliciosa Maionese Caseira Temperada, conhecido por sua cremosidade e sabor incrível. Ideal para lanches e saladas.</p>
-                <a href="molhoverdetradicional.html" class="leia-mais-button">Ver Receita</a>
-            </div>
-            
-            
-            <!-- Adicione mais posts do blog aqui -->
-            <!-- Adicione posts do blog aqui -->
-            <!-- Adicione mais posts conforme necessário -->
         </div>
-        
+      
 <!-- Adicione um espaço aqui -->
 <div class="espaco"></div>
 
@@ -417,6 +376,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Pave Tradicional</p>
+            <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='pavetradicionalhtml'">Ver Receita</button>
         </div>
@@ -428,6 +388,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Arroz Temperado com Bacalhau</p>
+            <p class="post-meta">Por: Vanda em 27 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='arroztemperadobacalhau.html'">Ver Receita</button>
         </div>
@@ -439,6 +400,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Pavê de Kinder</p>
+            <p class="post-meta">Por: Anelize Gobete Vieira em 24 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='pavedekinder.html'">Ver Receita</button>
         </div>
@@ -450,6 +412,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Pave de Limão</p>
+            <p class="post-meta">Por: Ivan de Lima em 24 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='pavedelimao.html'">Ver Receita</button>
         </div>
@@ -461,6 +424,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Salada de Macarrão Fria/Quente</p>
+            <p class="post-meta">Por: Guilherme Leite em 21 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='saladademacarrao.html'">Ver Receita</button>
         </div>
@@ -473,6 +437,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Pudim de Leite Condensado</p>
+            <p class="post-meta">Por: Guilherme Leite em 20 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='pudimleitecondensado.html'">Ver Receita</button>
         </div>
@@ -484,6 +449,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Pavê de Chocotone</p>
+            <p class="post-meta">Por: Maria em 23 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='pavedechocotone.html'">Ver Receita</button>
         </div>
@@ -495,6 +461,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Frango Assado Inteiro Saboroso</p>
+            <p class="post-meta">Por: Alexandre em 23 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='frangoassado.html'">Ver Receita</button>
         </div>
@@ -506,6 +473,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Bombom de Morango na Travessa</p>
+            <p class="post-meta">Por: Bruna Lima em 18 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='bombommorangotravessa.html'">Ver Receita</button>
         </div>
@@ -517,6 +485,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Bolo de Chocolate Simples</p>
+            <p class="post-meta">Por: Guilherme Leite em 16 de Dezembro de 2023</p>
            <!-- Adicione o botão personalizado aqui -->
            <button class="btn btn-sm btn-custom" onclick="location.href='bolochocolatesimples.html'">Ver Receita</button>
         </div>
@@ -528,6 +497,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Bolo Formigueiro Fofinho e Macio</p>
+            <p class="post-meta">Por: Carla Duclos em 16 de Dezembro de 2023</p>
      <!-- Adicione o botão personalizado aqui -->
      <button class="btn btn-sm btn-custom" onclick="location.href='boloformigueirofofi.html'">Ver Receita</button>
         </div>
@@ -539,6 +509,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Molho Verde de Abacate</p>
+            <p class="post-meta">Por: Bruna Lima em 17 de Dezembro de 2023</p>
            <!-- Adicione o botão personalizado aqui -->
            <button class="btn btn-sm btn-custom" onclick="location.href='molhoverdeabacate.html'">Ver Receita</button>
         </div>
@@ -550,6 +521,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Bolo de Cenoura com Cobertura de Chocolate</p>
+            <p class="post-meta">Por: Bruna Lima em 17 de Dezembro de 2023</p>
             <!-- Adicione o botão personalizado aqui -->
             <button class="btn btn-sm btn-custom" onclick="location.href='bolocenourachoco.html'">Ver Receita</button>
         </div>
@@ -562,6 +534,7 @@
         </div>
         <div class="recipe_info">
             <p class="nome">Bolo de Fubá Nº 1</p>
+            <p class="post-meta">Por: Guilherme Leite em 17 de Dezembro de 2023</p>
               <!-- Adicione o botão personalizado aqui -->
               <button class="btn btn-sm btn-custom" onclick="location.href='bolodefuba.html'">Ver Receita</button>
    
