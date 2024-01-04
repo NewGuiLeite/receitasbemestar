@@ -1,4 +1,4 @@
-OWNERDOMAIN=
+OWNERDOMAIN=receitasbemestar.com
 MANAGERDOMAIN=themoneytizer.com
 themoneytizer.com,112740,DIRECT
 smartadserver.com,1097,DIRECT
