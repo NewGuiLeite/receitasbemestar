@@ -176,7 +176,7 @@
       var uspStubFunction = function() {
         var arg = arguments;
         if (typeof window.__uspapi !== uspStubFunction) {
-          setTimeout(function() {5
+          setTimeout(function() {
             if (typeof window.__uspapi !== 'undefined') {
               window.__uspapi.apply(window.__uspapi, arg);
             }
@@ -200,7 +200,7 @@
     })();
     </script>
     <!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
-
+    
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 
@@ -762,6 +762,12 @@
     </div>
 </footer>
 
+
+
+
+    
+    <!-- Script do seu arquivo cookie.js -->
+    <script src="cookie.js"></script>
     <script src="scripts.js"></script>
 
     </body>
