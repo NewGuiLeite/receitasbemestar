@@ -1,82 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <!-- Open Graph tags -->
     <meta property="og:title" content="Receitas Bem Estar - O seu site de Receitas">
     <meta property="og:description" content="Bolos, doces, salgados e deliciosas comidas caseiras. Explore receitas simples, rápidas e econômicas, incluindo um pavê tradicional incrível.">
     <meta property="og:image" content="img/bannernovo.jpeg">
 
-    <!-- Favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
     <title>Home - Receitas Bem Estar</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Adicione esta linha para incluir o Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- Bootstrap JavaScript (jQuery, Popper.js, Bootstrap JS) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Inclua isso no cabeçalho do seu site -->
-    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@3.1.2/build/tarteaucitron.js"></script>
+<!-- Adicione esta linha para incluir o Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7341100982858254" crossorigin="anonymous"></script>
-    <meta name="google-adsense-account" content="ca-pub-7341100982858254">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7341100982858254"
+     crossorigin="anonymous"></script>
+ <!-- Metalog -->
+<meta name="google-adsense-account" content="ca-pub-7341100982858254">
     
-    <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3KGMMNVB6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-K3KGMMNVB6');
-    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3KGMMNVB6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Inclua isso no cabeçalho do seu site, após a inclusão do tarteaucitron.js -->
-    <script type="text/javascript">
-        tarteaucitron.init({
-            privacyUrl: '', // URL da sua política de privacidade
-            hashtag: '#tarteaucitron', // Hashtag para personalizar as mensagens no Twitter
+  gtag('config', 'G-K3KGMMNVB6');
+</script>
 
-            // Defina a lista de fornecedores
-            moreInfoLink: true, // Adicionar link "Mais informações" em cada fornecedor
-            useExternalCss: false, // Carregar CSS externo (recomendado para personalização)
-
-            services: {
-                // Exemplo com alguns fornecedores da sua lista
-                'captify': {
-                    'id': 2,
-                    'name': 'Captify Technologies Limited',
-                    'purpose': 'Advertising'
-                },
-                'quantcast': {
-                    'id': 11,
-                    'name': 'Quantcast International Limited',
-                    'purpose': 'Analytics'
-                },
-                'adthrive': {
-                    'id': 9,
-                    'name': 'AdThrive, Inc.',
-                    'purpose': 'Advertising'
-                }
-                // Adicione outros fornecedores conforme necessário
-            },
-        });
-    </script>
-
-    
-    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
-
+   
     <style>
         /* Estilo geral do corpo da página */
         body {
@@ -207,11 +172,9 @@
     height: auto;
 }
 
-
       
-</style>
-</head>
-
+          
+    </style>
 
     <body>
         <div class="container">
@@ -635,9 +598,17 @@
     </div>
 </footer>
 
+   <!-- Banner de Cookies -->
+   <div id="cookie-banner">
+    <p>Este site usa cookies para garantir que você obtenha a melhor experiência. Ao continuar, você concorda com nossa <a href="/politica-de-privacidade">política de privacidade</a>.</p>
+    <button onclick="aceitarCookies()">Aceitar Cookies</button>
+</div>
 
-
-
+<!-- Lista de Fornecedores -->
+<ul id="fornecedores-lista" style="display: none;">
+    <li data-id="2">Captify Technologies Limited</li>
+    <!-- Adicione os outros fornecedores aqui -->
+</ul>
     
     <!-- Script do seu arquivo cookie.js -->
     <script src="cookie.js"></script>
