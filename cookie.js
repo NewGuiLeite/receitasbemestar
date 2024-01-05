@@ -7,27 +7,18 @@ function verificaCookies() {
 function defineCookiesAceitos() {
     localStorage.setItem('cookiesAceitos', 'true');
     document.getElementById('cookie-banner').style.display = 'none';
-    exibeFornecedores();
 }
 
 // Função para exibir o banner de cookies se ainda não foi aceito
 function exibeBannerCookies() {
     if (!verificaCookies()) {
         document.getElementById('cookie-banner').style.display = 'block';
-    } else {
-        exibeFornecedores();
     }
 }
 
 // Função chamada ao clicar no botão de aceitar cookies
 function aceitarCookies() {
     defineCookiesAceitos();
-}
-
-// Função para exibir a lista de fornecedores
-function exibeFornecedores() {
-    const listaFornecedores = document.getElementById('fornecedores-lista');
-    listaFornecedores.style.display = 'block';
 }
 
 // Verifica e exibe o banner de cookies ao carregar a página
