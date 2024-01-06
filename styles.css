@@ -379,6 +379,7 @@ nav {
 }
 
 
+
 .recipe_info p {
     font-size: 16px;
     opacity: 0.7;
@@ -563,6 +564,14 @@ footer {
     margin: 0 10px;
 }
 
+footer {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+}
+
 .social-media {
     margin-bottom: 10px; /* Espaçamento inferior para separar das demais seções */
 }
@@ -579,3 +588,4 @@ footer {
 .espaco {
     margin-bottom: 10px;
 }
+
